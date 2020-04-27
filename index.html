@@ -1,0 +1,72 @@
+<!doctype html> 
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="pizza, papa panchavati's, papa panchavati's pizza, papapanchavati, ppp, papa's pizza">
+          
+        <!-- CDN link to SlickNav CSS  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+ 
+        <!-- Link to your custom stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- CDN link to jQuery (necessary for SlickNav jQuery to work -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ 
+        <!-- CDN link to SlickNav jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+        <!--  Now add the following script to create a slicknav (mobile) version of your navigation menu, then attach it to an empty nav element you'll add before your navigation menu in your HTML. In this case, I've given my navigation menu the .nav_menu class; insert the class attached to your own navigation menu where you see .nav_menu in the following script. In the HTML, you'll see I've added an empty nav element just before .nav_menu and given it the ID #mobilemenu. That ID appears in the script below, too. Insert the class or ID name you've attached to your empty nav element where you see #mobilemenu in the following script. -->
+     <script type="text/javascript">
+        $(document).ready(function () {
+          $("#nav_menu").slicknav({
+              prependTo: "#mobilemenu"
+          });
+      });
+    </script>
+        <title>Final Website</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+              <i class="fas fa-pizza-slice"></i>
+                Papa Panchavati's Pizza
+                <div class="wrapper">
+        
+                    <!-- This is the empty nav element that will serve as a placeholder for the slicknav version of .nav_menu. -->
+                    <nav id="mobilemenu"></nav>
+                    
+                    <!-- default nav menu -->
+                    <nav id="nav_menu">
+                      <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="#" class="lastitem">Contact</a></li>
+                      </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <main>
+              <h2>Welcome to the official website of Papa Panchavatis' Pizza Shop! At our shop, you can buy the best pizzas with the freshest ingredients, the widest selection of toppings, and all for the cheapest price!</h2>
+              <section class = "logo">
+                <img src="Assignment_Two-Logo.jpg" alt="PPP Logo"/>
+              </section>
+            </main>
+
+            <section class = "warning">
+                <h3>NOTICE: we are currently only taking delivery orders due to COVID-19.</h3>
+            </section>
+
+            <footer>
+              <h4>Papa Panchavati's Pizza Inc.</h4>
+              <h5><a href="design_spec.pdf">Design Spec</a></h5>
+              <h5>page designed by Manas Panchavati</h5>
+            </footer>
+
+        </div>
+    </body>
